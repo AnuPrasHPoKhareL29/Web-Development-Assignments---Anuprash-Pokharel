@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Feedback Form</h2>
+    <div class="section-box box-model-demo">
+  <form action="#" method="post"></form>
+    <label for="fullname">Full Name:</label><br/>
+    <input id="fullname" name="fullname" type="text" placeholder="Your full name" required minlength="3"><br/><br/>
+    <label for="email">Email Address:</label><br/>
+    <input id="email" name="email" type="email" placeholder="you@example.com" required><br/><br/>
+
+    <fieldset>
+      <legend>Rating</legend>
+      <label><input type="radio" name="rating" value="very-satisfied" required> Very Satisfied</label><br/>
+      <label><input type="radio" name="rating" value="satisfied"> Satisfied</label><br/>
+      <label><input type="radio" name="rating" value="neutral"> Neutral</label><br/>
+      <label><input type="radio" name="rating" value="unsatisfied"> Unsatisfied</label><br/>
+    </fieldset>
+    <br/>
+
+    <fieldset>
+      <legend>Interests</legend>
+      <label><input type="checkbox" name="interests" value="web-dev"> Web Development</label><br/>
+      <label><input type="checkbox" name="interests" value="mobile-dev"> Mobile Development</label><br/>
+      <label><input type="checkbox" name="interests" value="ai-ml"> AI &amp; Machine Learning</label><br/>
+    </fieldset>
+    <br/>
+
+    <label for="country">Country:</label><br/>
+    <select id="country" name="country" required>
+      <option value="">-- Select your country --</option>
+      <option value="nepal">Nepal</option>
+      <option value="india">United Kingdom</option>
+      <option value="usa">United States</option>
+    </select>
+    <br/><br/>
+
+    <label for="message">Write your feedback here:</label><br/>
+    <textarea id="message" name="message" rows="6" maxlength="500" placeholder="Share your thoughts..." required></textarea>
+    <br/><br/>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+  <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
